@@ -1,0 +1,454 @@
+23/04/05 16:36:34 INFO SparkContext: Running Spark version 3.2.1
+23/04/05 16:36:34 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+23/04/05 16:36:34 INFO ResourceUtils: ==============================================================
+23/04/05 16:36:34 INFO ResourceUtils: No custom resources configured for spark.driver.
+23/04/05 16:36:34 INFO ResourceUtils: ==============================================================
+23/04/05 16:36:34 INFO SparkContext: Submitted application: demo
+23/04/05 16:36:34 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+23/04/05 16:36:34 INFO ResourceProfile: Limiting resource is cpu
+23/04/05 16:36:34 INFO ResourceProfileManager: Added ResourceProfile id: 0
+23/04/05 16:36:35 INFO SecurityManager: Changing view acls to: abc
+23/04/05 16:36:35 INFO SecurityManager: Changing modify acls to: abc
+23/04/05 16:36:35 INFO SecurityManager: Changing view acls groups to: 
+23/04/05 16:36:35 INFO SecurityManager: Changing modify acls groups to: 
+23/04/05 16:36:35 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(abc); groups with view permissions: Set(); users  with modify permissions: Set(abc); groups with modify permissions: Set()
+23/04/05 16:36:35 INFO Utils: Successfully started service 'sparkDriver' on port 35427.
+23/04/05 16:36:35 INFO SparkEnv: Registering MapOutputTracker
+23/04/05 16:36:36 INFO SparkEnv: Registering BlockManagerMaster
+23/04/05 16:36:36 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+23/04/05 16:36:36 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+23/04/05 16:36:36 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+23/04/05 16:36:36 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-cf308377-e06a-4ff5-b8a7-76680bff3a0e
+23/04/05 16:36:36 INFO MemoryStore: MemoryStore started with capacity 408.9 MiB
+23/04/05 16:36:36 INFO SparkEnv: Registering OutputCommitCoordinator
+23/04/05 16:36:36 INFO log: Logging initialized @6057ms to org.sparkproject.jetty.util.log.Slf4jLog
+23/04/05 16:36:36 INFO Server: jetty-9.4.43.v20210629; built: 2021-06-30T11:07:22.254Z; git: 526006ecfa3af7f1a27ef3a288e2bef7ea9dd7e8; jvm 1.8.0_342-8u342-b07-0ubuntu1~20.04-b07
+23/04/05 16:36:36 INFO Server: Started @6298ms
+23/04/05 16:36:36 INFO AbstractConnector: Started ServerConnector@578741c3{HTTP/1.1, (http/1.1)}{0.0.0.0:4040}
+23/04/05 16:36:36 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+23/04/05 16:36:36 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@6acb6546{/jobs,null,AVAILABLE,@Spark}
+23/04/05 16:36:36 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@3688c305{/jobs/json,null,AVAILABLE,@Spark}
+23/04/05 16:36:36 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@16319799{/jobs/job,null,AVAILABLE,@Spark}
+23/04/05 16:36:36 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@386c384b{/jobs/job/json,null,AVAILABLE,@Spark}
+23/04/05 16:36:36 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@4ba8a28d{/stages,null,AVAILABLE,@Spark}
+23/04/05 16:36:36 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@6faf0034{/stages/json,null,AVAILABLE,@Spark}
+23/04/05 16:36:36 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@39fc21d6{/stages/stage,null,AVAILABLE,@Spark}
+23/04/05 16:36:36 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@430178fd{/stages/stage/json,null,AVAILABLE,@Spark}
+23/04/05 16:36:36 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@1cdad095{/stages/pool,null,AVAILABLE,@Spark}
+23/04/05 16:36:36 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@17fa03a2{/stages/pool/json,null,AVAILABLE,@Spark}
+23/04/05 16:36:36 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@15adbfef{/storage,null,AVAILABLE,@Spark}
+23/04/05 16:36:36 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@2ff58786{/storage/json,null,AVAILABLE,@Spark}
+23/04/05 16:36:36 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@44621416{/storage/rdd,null,AVAILABLE,@Spark}
+23/04/05 16:36:36 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@4cfc070{/storage/rdd/json,null,AVAILABLE,@Spark}
+23/04/05 16:36:36 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@28dc6a5b{/environment,null,AVAILABLE,@Spark}
+23/04/05 16:36:36 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@783025b7{/environment/json,null,AVAILABLE,@Spark}
+23/04/05 16:36:36 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@1f88ce22{/executors,null,AVAILABLE,@Spark}
+23/04/05 16:36:36 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@51131121{/executors/json,null,AVAILABLE,@Spark}
+23/04/05 16:36:36 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@33075681{/executors/threadDump,null,AVAILABLE,@Spark}
+23/04/05 16:36:36 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@6e17ac88{/executors/threadDump/json,null,AVAILABLE,@Spark}
+23/04/05 16:36:36 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@36ba39e8{/static,null,AVAILABLE,@Spark}
+23/04/05 16:36:36 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@2157c699{/,null,AVAILABLE,@Spark}
+23/04/05 16:36:36 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@7b72a971{/api,null,AVAILABLE,@Spark}
+23/04/05 16:36:36 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@636d5e0f{/jobs/job/kill,null,AVAILABLE,@Spark}
+23/04/05 16:36:36 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@17d6b53d{/stages/stage/kill,null,AVAILABLE,@Spark}
+23/04/05 16:36:36 INFO SparkUI: Bound SparkUI to 0.0.0.0, and started at http://c43933ef0efc:4040
+23/04/05 16:36:37 INFO StandaloneAppClient$ClientEndpoint: Connecting to master spark://localhost:7077...
+23/04/05 16:36:37 INFO TransportClientFactory: Successfully created connection to localhost/127.0.0.1:7077 after 83 ms (0 ms spent in bootstraps)
+23/04/05 16:36:37 INFO StandaloneSchedulerBackend: Connected to Spark cluster with app ID app-20230405163637-0007
+23/04/05 16:36:37 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20230405163637-0007/0 on worker-20230405155958-172.18.0.8-41873 (172.18.0.8:41873) with 64 core(s)
+23/04/05 16:36:37 INFO StandaloneSchedulerBackend: Granted executor ID app-20230405163637-0007/0 on hostPort 172.18.0.8:41873 with 64 core(s), 1024.0 MiB RAM
+23/04/05 16:36:37 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 41605.
+23/04/05 16:36:37 INFO NettyBlockTransferService: Server created on c43933ef0efc:41605
+23/04/05 16:36:37 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+23/04/05 16:36:37 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, c43933ef0efc, 41605, None)
+23/04/05 16:36:37 INFO BlockManagerMasterEndpoint: Registering block manager c43933ef0efc:41605 with 408.9 MiB RAM, BlockManagerId(driver, c43933ef0efc, 41605, None)
+23/04/05 16:36:37 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, c43933ef0efc, 41605, None)
+23/04/05 16:36:37 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, c43933ef0efc, 41605, None)
+23/04/05 16:36:37 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20230405163637-0007/0 is now RUNNING
+23/04/05 16:36:38 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@273453b4{/metrics/json,null,AVAILABLE,@Spark}
+23/04/05 16:36:38 INFO StandaloneSchedulerBackend: SchedulerBackend is ready for scheduling beginning after reached minRegisteredResourcesRatio: 0.0
+23/04/05 16:36:38 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir.
+23/04/05 16:36:39 INFO SharedState: Warehouse path is 'hdfs://localhost/config/workspace/spark-warehouse'.
+23/04/05 16:36:39 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@5d1b1780{/SQL,null,AVAILABLE,@Spark}
+23/04/05 16:36:39 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@67445440{/SQL/json,null,AVAILABLE,@Spark}
+23/04/05 16:36:39 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@14cc33dc{/SQL/execution,null,AVAILABLE,@Spark}
+23/04/05 16:36:39 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@d407f40{/SQL/execution/json,null,AVAILABLE,@Spark}
+23/04/05 16:36:39 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@2c481d1f{/static/sql,null,AVAILABLE,@Spark}
+
+INFO:root:#####Spark dataframe queries#######
+INFO:root:Reading data from users and programatically specified the schema
++---+---+---+---+-----+
+|_c0|_c1|_c2|_c3|  _c4|
++---+---+---+---+-----+
+|  1|  F|  1| 10|48067|
+|  2|  M| 56| 16|70072|
+|  3|  M| 25| 15|55117|
+|  4|  M| 45|  7|02460|
++---+---+---+---+-----+
+only showing top 4 rows
+
+INFO:root:renaming columns names as mentioned in the dataset documentation
++------+------+---+--------------------+--------+
+|UserID|Gender|Age|          Occupation|Zip_code|
++------+------+---+--------------------+--------+
+|     1|     F|  1|        K-12 student|   48067|
+|     2|     M| 56|       self-employed|   70072|
+|     3|     M| 25|           scientist|   55117|
+|     4|     M| 45|executive/managerial|   02460|
++------+------+---+--------------------+--------+
+only showing top 4 rows
+
+INFO:root:Saving ratings Tables without defining DDL in Hive
+23/04/05 16:37:02 WARN HiveConf: HiveConf of name hive.stats.jdbc.timeout does not exist
+23/04/05 16:37:02 WARN HiveConf: HiveConf of name hive.stats.retries.wait does not exist
+23/04/05 16:37:10 WARN ObjectStore: Version information not found in metastore. hive.metastore.schema.verification is not enabled so recording the schema version 2.3.0
+23/04/05 16:37:10 WARN ObjectStore: setMetaStoreSchemaVersion called but recording version is disabled: version = 2.3.0, comment = Set by MetaStore UNKNOWN@172.18.0.8
+23/04/05 16:37:10 WARN ObjectStore: Failed to get database default, returning NoSuchObjectException
+23/04/05 16:37:15 WARN SessionState: METASTORE_FILTER_HOOK will be ignored, since hive.security.authorization.manager is set to instance of HiveAuthorizerFactory.
+23/04/05 16:37:15 WARN HiveConf: HiveConf of name hive.internal.ss.authz.settings.applied.marker does not exist
+23/04/05 16:37:15 WARN HiveConf: HiveConf of name hive.stats.jdbc.timeout does not exist
+23/04/05 16:37:15 WARN HiveConf: HiveConf of name hive.stats.retries.wait does not exist
+23/04/05 16:37:16 WARN ObjectStore: Failed to get database global_temp, returning NoSuchObjectException
++---------+---------+-----------+
+|namespace|tableName|isTemporary|
++---------+---------+-----------+
+|  default|    users|      false|
++---------+---------+-----------+
+
+INFO:root:Querying data from hive tables
++------+------+---+--------------------+--------+
+|UserID|Gender|Age|          Occupation|Zip_code|
++------+------+---+--------------------+--------+
+|     1|     F|  1|        K-12 student|   48067|
+|     2|     M| 56|       self-employed|   70072|
+|     3|     M| 25|           scientist|   55117|
+|     4|     M| 45|executive/managerial|   02460|
+|     5|     M| 25|              writer|   55455|
++------+------+---+--------------------+--------+
+
+INFO:root:Reading data from ratings and programatically specified the schema
++---+----+---+---------+
+|_c0| _c1|_c2|      _c3|
++---+----+---+---------+
+|  1|1193|  5|978300760|
+|  1| 661|  3|978302109|
+|  1| 914|  3|978301968|
+|  1|3408|  4|978300275|
++---+----+---+---------+
+only showing top 4 rows
+
+INFO:root:renaming columns names as mentioned in the dataset documentation
++-------+--------+-------+---------+
+|UserIDs|MovieIDs|Ratings|Timestamp|
++-------+--------+-------+---------+
+|      1|    1193|      5|978300760|
+|      1|     661|      3|978302109|
+|      1|     914|      3|978301968|
+|      1|    3408|      4|978300275|
++-------+--------+-------+---------+
+only showing top 4 rows
+
+INFO:root:Saving ratings Tables without defining DDL in Hive
++---------+---------+-----------+
+|namespace|tableName|isTemporary|
++---------+---------+-----------+
+|  default|  ratings|      false|
+|  default|    users|      false|
++---------+---------+-----------+
+
+INFO:root:Querying data from hive tables
++-------+--------+-------+---------+
+|UserIDs|MovieIDs|Ratings|Timestamp|
++-------+--------+-------+---------+
+|      1|    1193|      5|978300760|
+|      1|     661|      3|978302109|
+|      1|     914|      3|978301968|
+|      1|    3408|      4|978300275|
+|      1|    2355|      5|978824291|
++-------+--------+-------+---------+
+
+INFO:root:Reading data from movies and programatically specified the schema
++---+--------------------+--------------------+
+|_c0|                 _c1|                 _c2|
++---+--------------------+--------------------+
+|  1|    Toy Story (1995)|Animation|Childre...|
+|  2|      Jumanji (1995)|Adventure|Childre...|
+|  3|Grumpier Old Men ...|      Comedy|Romance|
+|  4|Waiting to Exhale...|        Comedy|Drama|
++---+--------------------+--------------------+
+only showing top 4 rows
+
+INFO:root:renaming columns names as mentioned in the dataset documentation
++-------+--------------------+--------------------+
+|movieId|               title|              genres|
++-------+--------------------+--------------------+
+|      1|    Toy Story (1995)|Animation|Childre...|
+|      2|      Jumanji (1995)|Adventure|Childre...|
+|      3|Grumpier Old Men ...|      Comedy|Romance|
+|      4|Waiting to Exhale...|        Comedy|Drama|
++-------+--------------------+--------------------+
+only showing top 4 rows
+
+INFO:root:Extracting the Year and Genre from the movies data
++--------------------+----------+
+|               title|    genres|
++--------------------+----------+
+|    Toy Story (1995)| Animation|
+|    Toy Story (1995)|Children's|
+|    Toy Story (1995)|    Comedy|
+|      Jumanji (1995)| Adventure|
+|      Jumanji (1995)|Children's|
+|      Jumanji (1995)|   Fantasy|
+|Grumpier Old Men ...|    Comedy|
+|Grumpier Old Men ...|   Romance|
+|Waiting to Exhale...|    Comedy|
+|Waiting to Exhale...|     Drama|
++--------------------+----------+
+only showing top 10 rows
+
++-------+--------------------+--------------------+----+
+|movieId|               title|              genres|year|
++-------+--------------------+--------------------+----+
+|      1|    Toy Story (1995)|Animation|Childre...|1995|
+|      2|      Jumanji (1995)|Adventure|Childre...|1995|
+|      3|Grumpier Old Men ...|      Comedy|Romance|1995|
+|      4|Waiting to Exhale...|        Comedy|Drama|1995|
+|      5|Father of the Bri...|              Comedy|1995|
++-------+--------------------+--------------------+----+
+only showing top 5 rows
+
+INFO:root:Saving movies Tables without defining DDL in Hive
++---------+---------+-----------+
+|namespace|tableName|isTemporary|
++---------+---------+-----------+
+|  default|   movies|      false|
+|  default|  ratings|      false|
+|  default|    users|      false|
++---------+---------+-----------+
+
+INFO:root:Querying data from hive tables
++-------+--------------------+--------------------+
+|movieId|               title|              genres|
++-------+--------------------+--------------------+
+|      1|    Toy Story (1995)|Animation|Childre...|
+|      2|      Jumanji (1995)|Adventure|Childre...|
+|      3|Grumpier Old Men ...|      Comedy|Romance|
+|      4|Waiting to Exhale...|        Comedy|Drama|
+|      5|Father of the Bri...|              Comedy|
++-------+--------------------+--------------------+
+
+INFO:root:broadcast variable example (i.e., joining  ratings and movies datasets )
++-------+--------+-------+---------+--------------------+--------------------+
+|UserIDs|MovieIDs|Ratings|Timestamp|               title|              genres|
++-------+--------+-------+---------+--------------------+--------------------+
+|      1|    1193|      5|978300760|One Flew Over the...|               Drama|
+|      1|     661|      3|978302109|James and the Gia...|Animation|Childre...|
+|      1|     914|      3|978301968| My Fair Lady (1964)|     Musical|Romance|
++-------+--------+-------+---------+--------------------+--------------------+
+only showing top 3 rows
+
+INFO:root:######Spark Analytical queries######
+INFO:root: top 10 most viewed movies
++--------+--------------------+-----------------+
+|MovieIDs|               title|top_viewed_movies|
++--------+--------------------+-----------------+
+|    2858|American Beauty (...|             3428|
+|     260|Star Wars: Episod...|             2991|
+|    1196|Star Wars: Episod...|             2990|
+|    1210|Star Wars: Episod...|             2883|
+|     480|Jurassic Park (1993)|             2672|
+|    2028|Saving Private Ry...|             2653|
+|     589|Terminator 2: Jud...|             2649|
+|    2571|  Matrix, The (1999)|             2590|
+|    1270|Back to the Futur...|             2583|
+|     593|Silence of the La...|             2578|
++--------+--------------------+-----------------+
+only showing top 10 rows
+
+INFO:root: distinct list of genres available
++-----------+
+|     genres|
++-----------+
+|      Crime|
+|    Romance|
+|   Thriller|
+|  Adventure|
+| Children's|
+|      Drama|
+|        War|
+|Documentary|
+|    Fantasy|
+|    Mystery|
+|    Musical|
+|  Animation|
+|  Film-Noir|
+|     Horror|
+|    Western|
+|     Comedy|
+|     Action|
+|     Sci-Fi|
++-----------+
+
+INFO:root:number of  movies for each genre
++-----------+-----+
+|     genres|count|
++-----------+-----+
+|      Drama| 1603|
+|     Comedy| 1200|
+|     Action|  503|
+|   Thriller|  492|
+|    Romance|  471|
+|     Horror|  343|
+|  Adventure|  283|
+|     Sci-Fi|  276|
+| Children's|  251|
+|      Crime|  211|
+|        War|  143|
+|Documentary|  127|
+|    Musical|  114|
+|    Mystery|  106|
+|  Animation|  105|
+|    Fantasy|   68|
+|    Western|   68|
+|  Film-Noir|   44|
++-----------+-----+
+
+INFO:root:number of movies are starting with numbers or letters (Example: Starting with 1/2/3../A/B/C..Z)
+ 
+number of movies starting with numbers are:  30
+number of movies starting with alphabet are:  3853
+ 
+INFO:root:List of latest released movies
++-------+------------------------+-----------------------+----+
+|movieId|title                   |genres                 |year|
++-------+------------------------+-----------------------+----+
+|3190   |Supernova (2000)        |Adventure|Sci-Fi       |2000|
+|3299   |Hanging Up (2000)       |Comedy|Drama           |2000|
+|3225   |Down to You (2000)      |Comedy|Romance         |2000|
+|3239   |Isn't She Great? (2000) |Comedy                 |2000|
+|3273   |Scream 3 (2000)         |Horror|Mystery|Thriller|2000|
+|3276   |Gun Shy (2000)          |Comedy                 |2000|
+|3285   |Beach, The (2000)       |Adventure|Drama        |2000|
+|3286   |Snow Day (2000)         |Comedy                 |2000|
+|3287   |Tigger Movie, The (2000)|Animation|Children's   |2000|
+|3291   |Trois (2000)            |Thriller               |2000|
++-------+------------------------+-----------------------+----+
+only showing top 10 rows
+
+INFO:root:#### Spark SQL Queries ###
+INFO:root:list of the oldest released movies
++--------------------+----+
+|               title|year|
++--------------------+----+
+|Daddy Long Legs (...|1919|
+|Spiders, The (Die...|1919|
+|Male and Female (...|1919|
+| Saphead, The (1920)|1920|
+|Dog's Life, A (1920)|1920|
+|     Kid, The (1921)|1921|
+|Nosferatu (Nosfer...|1922|
+|Tess of the Storm...|1922|
+|Always Tell Your ...|1923|
+|Three Ages, The (...|1923|
+|Woman of Paris, A...|1923|
+|Battleship Potemk...|1925|
+|        Cobra (1925)|1925|
+|Pleasure Garden, ...|1925|
+|      Go West (1925)|1925|
+|Gold Rush, The (1...|1925|
+|Seven Chances (1925)|1925|
+|Mountain Eagle, T...|1926|
+|   Metropolis (1926)|1926|
+|Son of the Sheik,...|1926|
++--------------------+----+
+only showing top 20 rows
+
+INFO:root:number of  movies are released each year
++---------------+----+
+|movies_per_year|year|
++---------------+----+
+|            345|1996|
+|            342|1995|
+|            337|1998|
+|            315|1997|
+|            283|1999|
+|            257|1994|
+|            165|1993|
+|            156|2000|
+|            104|1986|
+|            102|1992|
+|             77|1990|
+|             71|1987|
+|             69|1988|
+|             65|1985|
+|             60|1984|
+|             60|1989|
+|             60|1991|
+|             50|1982|
+|             43|1981|
+|             41|1980|
++---------------+----+
+only showing top 20 rows
+
+INFO:root:number of movies are there for each rating
++----------------+-------+
+|number_of_movies|Ratings|
++----------------+-------+
+|           56174|      1|
+|          261197|      3|
+|          226310|      5|
+|          348971|      4|
+|          107557|      2|
++----------------+-------+
+
+INFO:root:number of users have rated each movie
++---------------------+-----------------------------------------------------+
+|number_of_users_rated|title                                                |
++---------------------+-----------------------------------------------------+
+|3428                 |American Beauty (1999)                               |
+|2991                 |Star Wars: Episode IV - A New Hope (1977)            |
+|2990                 |Star Wars: Episode V - The Empire Strikes Back (1980)|
+|2883                 |Star Wars: Episode VI - Return of the Jedi (1983)    |
+|2672                 |Jurassic Park (1993)                                 |
+|2653                 |Saving Private Ryan (1998)                           |
+|2649                 |Terminator 2: Judgment Day (1991)                    |
+|2590                 |Matrix, The (1999)                                   |
+|2583                 |Back to the Future (1985)                            |
+|2578                 |Silence of the Lambs, The (1991)                     |
++---------------------+-----------------------------------------------------+
+only showing top 10 rows
+
+INFO:root: total ratings for each movie
++------------+-----------------------------------------------------+
+|total_rating|title                                                |
++------------+-----------------------------------------------------+
+|14800       |American Beauty (1999)                               |
+|13321       |Star Wars: Episode IV - A New Hope (1977)            |
+|12836       |Star Wars: Episode V - The Empire Strikes Back (1980)|
+|11598       |Star Wars: Episode VI - Return of the Jedi (1983)    |
+|11507       |Saving Private Ryan (1998)                           |
+|11257       |Raiders of the Lost Ark (1981)                       |
+|11219       |Silence of the Lambs, The (1991)                     |
+|11178       |Matrix, The (1999)                                   |
+|10835       |Sixth Sense, The (1999)                              |
+|10751       |Terminator 2: Judgment Day (1991)                    |
++------------+-----------------------------------------------------+
+only showing top 10 rows
+
+INFO:root: average ratings for each movie
++--------------+-----------------------------------------+
+|average_rating|title                                    |
++--------------+-----------------------------------------+
+|5.0           |Gate of Heavenly Peace, The (1995)       |
+|5.0           |Schlafes Bruder (Brother of Sleep) (1995)|
+|5.0           |Bittersweet Motel (2000)                 |
+|5.0           |Baby, The (1973)                         |
+|5.0           |Ulysses (Ulisse) (1954)                  |
+|5.0           |Smashing Time (1967)                     |
+|5.0           |Song of Freedom (1936)                   |
+|5.0           |Lured (1947)                             |
+|5.0           |One Little Indian (1973)                 |
+|5.0           |Follow the Bitch (1998)                  |
++--------------+-----------------------------------------+
+only showing top 10 rows
+
